@@ -7,6 +7,12 @@ import { getPublishDate } from '@finsweet/ts-utils';
 export const greetUser = (name: string) => {
   const publishDate = getPublishDate();
 
+  const whenCompleted = false;
+  if (whenCompleted !== false) {
+    console.log('all good');
+  } else {
+    throw new Error('Error here');
+  }
   console.log(`Hello ${name}!`);
   console.log(
     `This site was last published on ${publishDate?.toLocaleDateString('en-US', {
