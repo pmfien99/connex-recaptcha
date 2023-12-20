@@ -7,15 +7,6 @@ import fetchJsonp from 'fetch-jsonp';
  * Creates the "Submit" event for given form to pass data to pardot
  * @param form The form to be handled
  */
-// Add JSONP Callback to Window Element
-window.logResult = (json) => {
-  console.log(json);
-  if (json.result === 'successs') {
-    console.log('success -> log result');
-  } else if (json.result === 'error') {
-    console.log('error -> log result');
-  }
-};
 
 export const customFormHandler = (form: HTMLFormElement) => {
   // Set Up Form Variables
@@ -63,7 +54,7 @@ export const customFormHandler = (form: HTMLFormElement) => {
       }
     } else {
       // Make and handle AJAX request - No Honey Present
-      await makeAjaxRequest(requestURL);
+      makeAjaxRequest(requestURL);
     }
   });
 
