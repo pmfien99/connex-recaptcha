@@ -1,0 +1,61 @@
+OLD AJAX REQUEST 
+----------------------------------------
+
+// Old Function that was creating AJAX Request
+// Function to perform the AJAX request
+// const performAjaxRequest = function () {
+//   $.ajax({
+//     type: 'GET',
+//     url: action + '?' + dataURI,
+//     dataType: 'jsonp',
+//     jsonpCallback: 'logResult',
+//   });
+// };
+// Old Function that was creating AJAX Request
+
+FRONT END SPAM CHECK
+----------------------------------------
+
+// // Front End Spam Check - If Honey Exists
+// if (honey !== undefined) {
+//   if (!honey.length || honey.val() === '') {
+//     performAjaxRequest();
+//   } else {
+//     event.preventDefault();
+//     console.error('Spam Detected');
+//     formError();
+//     return false;
+//   }
+// } else {
+//   // No honey element, proceed with AJAX request
+//   performAjaxRequest();
+// }
+// // Front End Spam Check - If Honey Exists
+
+
+SUCCESS AND ERROR 
+----------------------------------------
+
+//   formSuccess = function () {
+//     // console.log("FORM SUCCESS");
+//     form.hide();
+//     doneBlock.fadeIn();
+//     failBlock.hide();
+//     submitButton.hide();
+//     if (!Cookies.get('formFiles')) {
+//       const formValues = getFormData();
+//       Cookies.set('formFiles', formValues, { expires: 30 });
+//     } else {
+//       cookieData.itemsId.push(currentForm);
+//       Cookies.set('formFiles', cookieData, { expires: 30 });
+//     }
+//   };
+//   formError = function () {
+//     // console.log("FORM ERROR");
+//     form.show();
+//     doneBlock.hide();
+//     failBlock.fadeIn();
+//     submitButton.val('Submit');
+//   };
+//   return false;
+// };

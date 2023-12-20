@@ -7,6 +7,9 @@ dependencies:
   '@types/js-cookie':
     specifier: ^3.0.6
     version: 3.0.6
+  fetch-jsonp:
+    specifier: ^1.3.0
+    version: 1.3.0
   js-cookie:
     specifier: ^3.0.5
     version: 3.0.5
@@ -1531,6 +1534,10 @@ packages:
     dependencies:
       reusify: 1.0.4
     dev: true
+
+  /fetch-jsonp@1.3.0:
+    resolution: {integrity: sha512-hxCYGvmANEmpkHpeWY8Kawfa5Z1t2csTpIClIDG/0S92eALWHRU1RnGaj86Tf5Cc0QF+afSa4SQ4pFB2rFM5QA==}
+    dev: false
 
   /file-entry-cache@6.0.1:
     resolution: {integrity: sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg==}
